@@ -180,6 +180,11 @@ button {
 #keyboardBody .containDisplay {
   position: relative;
 }
+@media (max-width: 790px) {
+  #keyboardBody .containDisplay {
+    margin-bottom: 70%;
+  }
+}
 #keyboardBody .containDisplay #display {
   width: auto;
   min-height: 4rem;
@@ -219,6 +224,48 @@ button {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+@media (max-width: 790px) {
+  #keyboardBody .keyboard {
+    background: #2D3655;
+    width: 100%;
+    padding: 1rem 1rem 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  #keyboardBody .keyboard::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6rem;
+    top: -5rem;
+    left: 0;
+    background: #202537;
+    z-index: -1;
+  }
+  #keyboardBody .keyboard .lines button {
+    background: #54627E;
+    flex: 1;
+    box-shadow: 0 2.5px 0px #12172D;
+  }
+  #keyboardBody .keyboard .line01 {
+    width: 100%;
+  }
+  #keyboardBody .keyboard .line02 {
+    width: 100%;
+    padding: 0 2.785rem;
+  }
+  #keyboardBody .keyboard .line03 {
+    width: 100%;
+    padding: 0 8.354rem;
+  }
+  #keyboardBody .keyboard .line04 {
+    width: 100%;
+    padding: 0 8.354rem;
+  }
 }
 #keyboardBody .keyboard .lines {
   display: flex;

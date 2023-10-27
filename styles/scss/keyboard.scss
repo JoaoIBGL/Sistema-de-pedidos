@@ -7,6 +7,9 @@
 
     .containDisplay{
         position: relative;
+        @media (max-width: 790px) {
+            margin-bottom: 70%;
+        }
         #display{
             width: auto;
             min-height: 4rem;
@@ -48,6 +51,48 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        @media (max-width: 790px) {
+            background: #2D3655;
+            width: 100%;
+            padding: 1rem 1rem 2rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 6rem;
+                top: -5rem;
+                left: 0;
+                background: #202537;
+                z-index: -1;
+            }
+            .lines{
+                button{
+                    background: #54627E;
+                    flex: 1;
+                    box-shadow: 0 2.5px 0px #12172D;
+                }
+            }
+            .line01{
+                width: 100%;
+            }
+            .line02{
+                width: 100%;
+                padding: 0 2.785rem;
+            }
+            .line03{
+                width: 100%;
+                padding: 0 8.354rem;
+            }
+            .line04{
+                width: 100%;
+                padding: 0 8.354rem;
+            }
+        }
         .lines{
             display: flex;
             flex-direction: row;
