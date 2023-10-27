@@ -170,6 +170,107 @@ button {
   gap: 4rem;
 }
 
+#keyboardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+#keyboardBody .containDisplay {
+  position: relative;
+}
+#keyboardBody .containDisplay #display {
+  width: auto;
+  min-height: 4rem;
+  font-size: 4rem;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #fff;
+  display: inline-flex;
+}
+#keyboardBody .containDisplay #display:focus {
+  outline: none;
+}
+#keyboardBody .containDisplay::before {
+  content: "";
+  position: absolute;
+  opacity: 1;
+  animation: blink 1s infinite;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  display: block;
+  z-index: 5;
+}
+#keyboardBody .keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#keyboardBody .keyboard .lines {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.646rem;
+}
+#keyboardBody .keyboard .lines button {
+  width: 5.242rem;
+  height: 6.609rem;
+  background: #293140;
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 2.376rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em;
+}
+#keyboardBody .keyboard .lines button:hover, #keyboardBody .keyboard .lines button:active {
+  background: #1B1C1E;
+}
+#keyboardBody .keyboard .lines .send {
+  width: 22.905rem;
+}
+#keyboardBody .keyboard .lines .backspace {
+  width: 8.186rem;
+}
+#keyboardBody .keyboard .lines .backspace .containIcon {
+  width: 3.495rem;
+  height: auto;
+  line-height: 0;
+}
+#keyboardBody .keyboard .lines .backspace .containIcon img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  height: auto;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 .btnBack {
   width: 8.104rem;
   height: 5.914rem;

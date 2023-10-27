@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <title>Virtual Keyboard</title>
+</head>
+<body id="keyboardBody">
+    <a href="onde.html" class="btnBack">
+        <div class="containIcon">
+            <img src="./images/svgs/arrowBack.svg" alt="">
+        </div>
+    </a>
+    <div class="containerTitle">
+        <h1>Informe seu primeiro nome.</h1>
+    </div>
+
+    <div class="containDisplay">
+        <div id="display" readonly></div>
+    </div>
+
+    <div class="keyboard">
+        <div class="lines line01">
+            <button onclick="insertChar('q')">q</button>
+            <button onclick="insertChar('w')">w</button>
+            <button onclick="insertChar('e')">e</button>
+            <button onclick="insertChar('r')">r</button>
+            <button onclick="insertChar('t')">t</button>
+            <button onclick="insertChar('y')">y</button>
+            <button onclick="insertChar('u')">u</button>
+            <button onclick="insertChar('i')">i</button>
+            <button onclick="insertChar('o')">o</button>
+            <button onclick="insertChar('p')">p</button>
+        </div>
+        
+        <div class="lines line02">
+            <button onclick="insertChar('a')">a</button>
+            <button onclick="insertChar('s')">s</button>
+            <button onclick="insertChar('d')">d</button>
+            <button onclick="insertChar('f')">f</button>
+            <button onclick="insertChar('g')">g</button>
+            <button onclick="insertChar('h')">h</button>
+            <button onclick="insertChar('j')">j</button>
+            <button onclick="insertChar('k')">k</button>
+            <button onclick="insertChar('l')">l</button>
+        </div>
+
+        
+        <div class="lines line03">
+            <button onclick="insertChar('z')">z</button>
+            <button onclick="insertChar('x')">x</button>
+            <button onclick="insertChar('c')">c</button>
+            <button onclick="insertChar('v')">v</button>
+            <button onclick="insertChar('b')">b</button>
+            <button onclick="insertChar('n')">n</button>
+            <button onclick="insertChar('m')">m</button>
+        </div>
+        
+        <div class="lines line04">
+            <button class="send" onclick="send()">Enviar</button>
+
+            <button class="backspace" onclick="backspace()">
+                <div class="containIcon">
+                    <img src="./images/svgs/backspace.svg" alt="">
+                </div>
+            </button>
+        </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script src="./js/keyboard.js"></script>
+</body>
+</html>
