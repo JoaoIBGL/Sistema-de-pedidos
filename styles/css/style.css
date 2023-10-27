@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+}
+@media (max-width: 1680px) {
+  html {
+    font-size: 90%;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  }
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 80%;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 70%;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #F60;
+  height: 100vh;
+}
+
+body, input, textarea, button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+
+#background {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.border {
+  width: 100%;
+  height: 2.688rem;
+  background: #024420;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+}
+
+.btnOrder {
+  width: 49.251rem;
+  height: 17.5rem;
+  background: #024420;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  border: none;
+  border-top-left-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnOrder:active, .btnOrder:hover {
+  background: #05582a;
+}
+.btnOrder .container {
+  width: 30.787rem;
+  height: 8.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.btnOrder .container .containHand {
+  height: 100%;
+  width: auto;
+}
+.btnOrder .container .containHand img {
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
+  width: auto;
+}
+.btnOrder .container .containText {
+  width: 22.313rem;
+  height: auto;
+}
+.btnOrder .container .containText p {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+}
+@media (max-width: 720px) {
+  .btnOrder {
+    width: 100%;
+    height: 11.688rem;
+    padding: 2.875rem;
+    border-top-left-radius: 0;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  }
+  .btnOrder .container {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  }
+  .btnOrder .container .containText {
+    width: 18rem;
+  }
+  .btnOrder .container .containText p {
+    font-size: 1.583rem;
+    text-align: right;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  }
+}
+
+#onde {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#pagamento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.btnBack {
+  width: 8.104rem;
+  height: 5.914rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  border-radius: 1rem;
+  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+}
+.btnBack:hover, .btnBack:active {
+  box-shadow: 0rem 0rem 1.2rem rgba(0, 0, 0, 0.7);
+  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+}
+.btnBack .containIcon {
+  width: 3.25rem;
+  height: 2.438rem;
+  overflow: hidden;
+}
+.btnBack .containIcon img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.containerTitle h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3.625rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.containerMenu {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.containerMenu .menu {
+  width: 21.683rem;
+  height: 32.559rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: none;
+  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+}
+.containerMenu .menu:hover, .containerMenu .menu:active {
+  box-shadow: 0rem 0rem 1.2rem rgba(0, 0, 0, 0.7);
+  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+}
+.containerMenu .menu .containImg {
+  width: 100%;
+  height: 16.376rem;
+  padding: 2rem;
+  background: #EEEFF3;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerMenu .menu .containImg img {
+  object-fit: contain;
+  object-position: center;
+  width: auto;
+  height: 100%;
+}
+.containerMenu .menu .containText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerMenu .menu .containText p {
+  font-size: 2.246rem;
+  line-height: 1em;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */
