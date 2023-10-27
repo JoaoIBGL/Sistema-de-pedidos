@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento por PIX</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/css/style.css">
+</head>
+<body id="success">
+    <div class="containerIconCheck">
+        <img src="./images/svgs/check.svg" alt="">
+    </div>
+    <div class="containerTitle">
+        <h1>Seu pedido foi confirmado com sucesso, <span class="clientName"></span>!</h1>
+        <p>Você será avisado(a) assim que seu pedido estiver pronto.</p>
+    </div>
+    <div class="containerPassHour">
+        <div class="containPass">
+            <p>Sua senha: <span id="pass">150</span></p>
+        </div>
+        <div class="containHour">
+            <p>Hora do pedido: <span class="hour"></span></p>
+        </div>
+    </div>
+    
+    <p class="msg">*Caso preferir, fotografe esta tela para melhor experiência</p>
+
+    <a href="onde.html" class="btnNewOrder">
+        <i>+</i>
+        <p>Clique aqui<br>para fazer um<br>novo pedido</p>
+    </a>
+    
+    <script src="./js/success.js"></script>
+</body>
+</html>
+

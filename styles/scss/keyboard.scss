@@ -7,8 +7,12 @@
 
     .containDisplay{
         position: relative;
+        transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
         @media (max-width: 790px) {
             margin-bottom: 70%;
+            transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
         }
         #display{
             width: auto;
@@ -51,6 +55,8 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
         @media (max-width: 790px) {
             background: #2D3655;
             width: 100%;
@@ -60,6 +66,8 @@
             left: 0;
             border-top-right-radius: 1rem;
             border-top-left-radius: 1rem;
+            transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+            transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
             &::after{
                 content: '';
                 position: absolute;
@@ -69,28 +77,40 @@
                 left: 0;
                 background: #202537;
                 z-index: -1;
+                transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+                transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
             }
             .lines{
                 button{
                     background: #54627E;
                     flex: 1;
                     box-shadow: 0 2.5px 0px #12172D;
+                    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+                    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
                 }
             }
             .line01{
                 width: 100%;
+                transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+                transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
             }
             .line02{
                 width: 100%;
                 padding: 0 2.785rem;
+                transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+                transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
             }
             .line03{
                 width: 100%;
                 padding: 0 8.354rem;
+                transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+                transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
             }
             .line04{
                 width: 100%;
                 padding: 0 8.354rem;
+                transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+                transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
             }
         }
         .lines{
@@ -99,6 +119,8 @@
             align-items: center;
             justify-content: center;
             gap: 0.646rem;
+            transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+            transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
             button{
                 width: 5.242rem;
                 height: 6.609rem;
@@ -113,6 +135,8 @@
                 align-items: center;
                 justify-content: center;
                 line-height: 1em;
+                transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+                transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
                 &:hover, &:active{
                     background: #1B1C1E;
                 }

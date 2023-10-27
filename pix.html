@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opções de pagamento</title>
+    <title>Pagamento por PIX</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,34 +11,28 @@
 
     <link rel="stylesheet" href="./styles/css/style.css">
 </head>
-<body id="pagamento">
+<body id="pix">
     <a href="keyboard.html" class="btnBack">
         <div class="containIcon">
             <img src="./images/svgs/arrowBack.svg" alt="">
         </div>
     </a>
     <div class="containerTitle">
-        <h1>Como gostaria<br>de realizar o pagamento?</h1>
+        <h1>Falta pouco!</h1>
+        <p>Finalize o pagamento via pix<br>para confirmar o seu pedido.</p>
     </div>
-    <div class="containerMenu">
-        <a href="pix.html" class="menu">
-            <div class="containImg">
-                <img src="./images/svgs/pix.svg" alt="">
-            </div>
-            <div class="containText">
-                <p>Pagar<br>por pix</p>
-            </div>
-        </a>
-
-        <a href="#" class="menu">
-            <div class="containImg">
-                <img src="./images/svgs/pagarDepois.svg" alt="">
-            </div>
-            <div class="containText">
-                <p>Pagar<br>depois</p>
-            </div>
-        </a>
+    <div class="containerQRcode">
+        <!-- aqui vai ser colocado o QRcode -->
+        <img src="./images/qrcodeFake.png" alt="">
     </div>
+    <div class="containerTimer">
+        <p id="timer" class="timer">5:00</p>
+        <div class="progressBar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <p>Tempo restante para você fazer o pagamento</p>
+    </div>
+    <script src="./js/timer.js"></script>
 </body>
 </html>
 

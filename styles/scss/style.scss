@@ -3,6 +3,8 @@
 @use 'onde.scss';
 @use 'pagamento.scss';
 @use 'keyboard.scss';
+@use 'pix.scss';
+@use 'success.scss';
 
 .btnBack{
     width: 8.104rem;
@@ -42,12 +44,24 @@
         font-size: 3.625rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
+        .clientName{
+            text-transform: capitalize;
+        }
+    }
+    p{
+        font-size: 2.25rem;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        text-align: center;
     }
 }
 
 .containerMenu{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     .menu{
         width: 21.683rem;
@@ -94,7 +108,21 @@
                 font-weight: 600;
                 font-family: 'Montserrat', sans-serif;
                 color: #000;
+                text-align: center;
             }
         }
     }
+    @media (max-width: 560px) {
+        width: 100%;
+        padding: 0 2rem;
+        transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+        .menu{
+            width: calc(50% - 1rem);
+            transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+        }
+    }
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
 }
